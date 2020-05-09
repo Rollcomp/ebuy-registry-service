@@ -8,11 +8,13 @@ spring:
 eureka:
   instance:
     hostname: registry
+    preferIpAddress: true
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${APP_NAME}:8761/eureka/
+      defaultZone: https://ebuy-registry-service.herokuapp.com/eureka
     healthcheck:
       enabled: true
+
 
