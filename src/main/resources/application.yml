@@ -3,15 +3,15 @@ server:
 
 spring:
   application:
-    name: registry-service
+    name: ebuy-registry-service
 
 eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${APP_NAME}:8761/eureka/
     healthcheck:
       enabled: true
   instance:
-    prefer-ip-address: true
+    hostname:

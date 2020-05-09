@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.ebuy</groupId>
-	<artifactId>registry-service</artifactId>
+	<artifactId>ebuy-registry-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>registry-service</name>
+	<name>ebuy-registry-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
