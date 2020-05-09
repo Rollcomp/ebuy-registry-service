@@ -6,6 +6,8 @@ spring:
     name: ebuy-registry-service
 
 eureka:
+  instance:
+    hostname: registry
   client:
     register-with-eureka: false
     fetch-registry: false
@@ -13,5 +15,4 @@ eureka:
       defaultZone: http://${APP_NAME}:8761/eureka/
     healthcheck:
       enabled: true
-  instance:
-    hostname:
+
